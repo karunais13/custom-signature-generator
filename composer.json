@@ -1,7 +1,7 @@
 {
     "name": "karunais13/custom-signature-generator",
     "description": "Custom Signature Generator with validator",
-    "type": "library, helper, signature",
+    "type": "library",
     "authors": [
         {
             "name": "Karunaiswaran Sivaguru",
