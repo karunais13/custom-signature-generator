@@ -24,7 +24,7 @@ class CustomSignatureProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config/customSignature.php' => config_path('customSignature.php'),
+            __DIR__ . '/config/signature.php' => config_path('signature.php'),
         ]);
     }
 }

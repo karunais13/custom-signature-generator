@@ -24,5 +24,15 @@
         "psr-4": {
             "Karu\\CustomSignature\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karu\\CustomSignature\\CustomSignatureProvider"
+            ],
+            "aliases": {
+                "SignatureHelper": "Karu\\CustomSignature\\Facades\\CustomSignatureFacade"
+            }
+        }
     }
 }
