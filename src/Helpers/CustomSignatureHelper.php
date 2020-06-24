@@ -59,13 +59,21 @@ class CustomSignatureHelper
 
     public function getNonce($connection)
     {
-        return str_random(config("signature.{$connection}.nonce_length"));
+        return $this->quickRandom(config("signature.{$connection}.nonce_length", 6));
     }
 
     public function getTimestamp()
     {
-        return Carbon::now('UTC')->timestamp;
+        return time();
     }
+
+    protected function quickRandom($length = 16)
+    {
+        $pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        return substr(str_shuffle(str_repeat($pool, 5)), 0, $length);
+    }
+
 
     protected function getUUID()
     {
