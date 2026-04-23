@@ -1,5 +1,5 @@
 {
-    "name": "karunais13/custom-signature-generator",
+    "name": "noname24/custom-signature-generator",
     "description": "Custom Signature Generator with validator",
     "type": "library",
     "authors": [
@@ -13,7 +13,7 @@
         "php" : ">=5.4.0",
         "illuminate/config": ">= 5.0.0",
         "illuminate/support" : ">= 5.0.0",
-        "nesbot/carbon": "^1.26.3 || ^2.0"
+        "nesbot/carbon": "^2.0 || ^3.0"
     },
     "require-dev" : {
         "phpunit/phpunit" : ">=4.0",
